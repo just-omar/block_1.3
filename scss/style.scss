@@ -30,11 +30,20 @@ body {
     align-items: center;
   }
   &__divider {
-    // min-width: 2px;
-    // min-height: 32px;
+    min-width: 2px;
+    min-height: 32px;
     background-color: #eaeaea;
   }
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
+  .header {
+    position: static;
+  }
+}
+@media (min-width: 1120px) {
+  .header {
+    position: static;
   }
 }
 
@@ -55,5 +64,16 @@ body {
     font-family: "TT Lakes Bold";
     font-size: 28px;
     text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    position: static;
+  }
+}
+@media (min-width: 1120px) {
+  .main {
+    position: static;
   }
 }
