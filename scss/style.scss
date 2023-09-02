@@ -21,8 +21,9 @@ body {
 
 .header {
   &__inner {
-    background-color: white;
+    background-color: $white-color;
     min-height: 88px;
+    // border: 1px solid black;
     display: flex;
     gap: 16px;
     justify-content: space-between;
@@ -34,5 +35,25 @@ body {
     background-color: #eaeaea;
   }
   @media (min-width: 768px) {
+  }
+}
+
+.main {
+  &__h1-wrapper {
+    margin-top: 24px;
+    display: flex;
+    gap: 12px;
+    width: 304px;
+    height: 40px;
+  }
+  &__highlight {
+    background-color: #41f6d7;
+    width: 4px;
+    height: 40px;
+  }
+  &__h1 {
+    font-family: "TT Lakes Bold";
+    font-size: 28px;
+    text-align: left;
   }
 }
