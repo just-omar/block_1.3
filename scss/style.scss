@@ -19,11 +19,21 @@ body {
   padding: 0 20px;
 }
 
+@media (min-width: 768px) {
+  .container {
+    position: static;
+  }
+}
+@media (min-width: 1120px) {
+  .container {
+    position: static;
+  }
+}
+
 .header {
   &__inner {
     background-color: $white-color;
     min-height: 88px;
-    // border: 1px solid black;
     display: flex;
     gap: 16px;
     justify-content: space-between;
@@ -64,6 +74,32 @@ body {
     font-family: "TT Lakes Bold";
     font-size: 28px;
     text-align: left;
+  }
+  &__slide-menu {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &__slide-item {
+    background-color: $main-bg-color;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 9px;
+    border: 2px solid $main-bg-color;
+
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+
+    &:hover {
+      border: 2px solid #b8ffec;
+      border-radius: 6px;
+    }
   }
 }
 
