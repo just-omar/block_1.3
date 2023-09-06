@@ -167,6 +167,7 @@ body {
       border-radius: 6px;
     }
   }
+
   &__description {
     font-size: 14px;
     color: #1b1c21;
@@ -194,7 +195,28 @@ body {
       left: -28px;
     }
     &__slide-menu {
-      // margin-left: 24px;
+      // margin-bottom: 32px;
+    }
+
+    &__bottom-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 48px;
+    }
+    &__bottom-left {
+      // width: 312px;
+    }
+
+    &__description {
+      line-height: 20px;
+      &::after {
+        content: "\A\AМы успешно работаем с 1992 года и\A заслужили репутацию надежного партнера";
+        white-space: pre;
+      }
+    }
+    &__picture {
+      border-radius: 5px;
     }
   }
 }
