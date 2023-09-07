@@ -241,6 +241,7 @@ body {
     border: none;
     background-color: #f8f8f8;
     cursor: pointer;
+    font-weight: bold;
   }
   &__picture {
     margin-top: 16px;
@@ -265,6 +266,7 @@ body {
 
     &__picture {
       border-radius: 5px;
+      width: 360px;
     }
   }
 }
@@ -278,6 +280,10 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
+    }
+    &__slide-menu {
+      display: flex;
+      flex-wrap: wrap;
     }
     &__h1-wrapper {
       margin: 0;
