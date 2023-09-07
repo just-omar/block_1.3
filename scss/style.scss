@@ -194,9 +194,41 @@ body {
     }
   }
 
-  &__description {
-    font-size: 14px;
-    color: #1b1c21;
+  &__bottom-left {
+    // border: 1px solid black;
+
+    @media (min-width: 1120px) {
+      margin-bottom: 3.5rem;
+    }
+    .descr {
+      font-size: 14px;
+      color: #1b1c21;
+      margin-bottom: 16px;
+      @media (max-width: 768px) {
+        &--hide-mobile {
+          display: none;
+        }
+        &--show-mobile {
+          display: inline-block;
+        }
+      }
+      @media (min-width: 768px) {
+        &--hide-tablet {
+          display: none;
+        }
+        &--show-tablet {
+          display: inline-block;
+        }
+      }
+      @media (min-width: 1120px) {
+        &--hide-desktop {
+          display: none;
+        }
+        &--show-desktop {
+          display: inline-block;
+        }
+      }
+    }
   }
   &__arrows {
     margin-right: 8px;
@@ -223,9 +255,6 @@ body {
     &__highlight {
       left: -28px;
     }
-    &__slide-menu {
-      // margin-bottom: 32px;
-    }
 
     &__bottom-wrapper {
       display: flex;
@@ -233,17 +262,7 @@ body {
       align-items: center;
       gap: 48px;
     }
-    &__bottom-left {
-      // width: 312px;
-    }
 
-    &__description {
-      line-height: 20px;
-      &::after {
-        content: "\A\AМы успешно работаем с 1992 года и\A заслужили репутацию надежного партнера";
-        white-space: pre;
-      }
-    }
     &__picture {
       border-radius: 5px;
     }
@@ -278,6 +297,9 @@ body {
         text-decoration: none;
         color: #1b1c21;
       }
+    }
+    &__picture {
+      width: 530px;
     }
   }
 }
