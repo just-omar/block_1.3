@@ -88,8 +88,7 @@ body {
 @media (min-width: 768px) {
   .header {
     position: static;
-    &__nav {
-    }
+
     &__left-wrapper {
       display: flex;
     }
@@ -97,14 +96,11 @@ body {
       display: block;
     }
     &__right-divider {
+      position: static;
     }
     &__icons-container {
       display: flex;
       gap: 20px;
-    }
-    &__tablet-icons {
-      display: flex;
-      gap: 16px;
     }
     &__tablet-icons {
       display: flex;
@@ -115,12 +111,14 @@ body {
 @media (min-width: 1120px) {
   .header {
     position: static;
+    display: none;
   }
 }
 
 .main {
-  // margin-left: 16px;
-  // border: 1px solid black;
+  &__icons {
+    display: none;
+  }
   &__h1-wrapper {
     // border: 1px solid black;
     position: relative;
@@ -254,5 +252,32 @@ body {
 @media (min-width: 1120px) {
   .main {
     position: static;
+
+    &__services {
+      margin-top: 42px;
+      padding-top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    &__h1-wrapper {
+      margin: 0;
+    }
+    &__highlight {
+      left: -36px;
+    }
+    &__icons {
+      display: flex;
+      gap: 32px;
+      font-weight: bold;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        color: #1b1c21;
+      }
+    }
   }
 }
