@@ -22,11 +22,14 @@ body {
 
 @media (min-width: 768px) {
   .container {
-    padding: 0 24px;
+    max-width: 1120;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1120px) {
   .container {
+    max-width: 1120px;
+    // margin: 0 auto;
     padding: 0 32px;
   }
 }
@@ -260,7 +263,9 @@ body {
     }
     &__slide-menu {
       display: flex;
-      width: 1050px;
+      // width: 1050px;
+      // width: 1050px;
+      // width: 100%;
       flex-wrap: wrap;
     }
     &__h1-wrapper {
