@@ -50,7 +50,41 @@ body {
     gap: 16px;
     justify-content: space-between;
     align-items: center;
+    a {
+      width: 40px;
+      height: 40px;
+    }
   }
+
+  &__burger-link {
+    background: url("/images/burger.svg");
+  }
+
+  &__logo-link {
+    min-width: 96.55px;
+    min-height: 50.81px;
+    background: url("/images/logo.png");
+  }
+
+  &__call-link {
+    background: url("/images/call.png");
+  }
+
+  &__chat-link {
+    background: url("/images/chat.png");
+  }
+
+  &__profile-link {
+    background: url("/images/profile.png");
+  }
+
+  &__repair-link {
+    background: url("/images/repair.png");
+  }
+  &__checkstatus-link {
+    background: url("/images/checkstatus.png");
+  }
+
   &__left-wrapper {
     display: flex;
     gap: 17px;
@@ -119,6 +153,28 @@ body {
 }
 
 .main {
+  &__repair-link {
+    .img {
+      min-width: 40px;
+      min-height: 40px;
+      background: url("/images/repair.png");
+    }
+  }
+  &__checkstatus-link {
+    .img {
+      min-width: 40px;
+      min-height: 40px;
+
+      background: url("/images/checkstatus.png");
+    }
+  }
+
+  &__icons-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+  }
   &__icons {
     display: none;
   }
